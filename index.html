@@ -14,15 +14,13 @@
 
     <nav id="navbar">
         <header>CSS Documentation</header>
-        <div class="left">
-            <ul>
-                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-                <li><a href="#Learning_Pathway" class="nav-link">Learning Pathway</a></li>
-                <li><a href="#Modules" class="nav-link">Modules</a></li>
-                <li><a href="#Solving_Common_CSS_Problems" class="nav-link">Solving Common CSS Problems</a></li>
-                <li><a href="#See_also" class="nav-link">See also</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Learning_Pathway" class="nav-link">Learning Pathway</a></li>
+            <li><a href="#Modules" class="nav-link">Modules</a></li>
+            <li><a href="#Solving_Common_CSS_Problems" class="nav-link">Solving Common CSS Problems</a></li>
+            <li><a href="#See_also" class="nav-link">See also</a></li>
+        </ul>
     </nav>
 
     <main id="main-doc">
@@ -35,7 +33,18 @@
                 For example, you can use CSS to alter the font, color, size, and spacing of your content, split it into
                 multiple columns, or add animations and other decorative features.</p>
             <p>CSS is important, because without it, your page will have structure, but no style. This will make your
-                page boring to look at, so that's why we add CSS</p>
+                website boring, which you don't want. You will most likely see CSS code that looks something similar to
+                this:</p>
+
+            <code>
+                    body {
+                        font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 100%;
+                    }
+                </code>
+
             <p>If you know literally nothing about CSS, there are resources out there, like websites and online courses.
                 There are learning platforms like <a href="https://www.freecodecamp.org/"
                     target="_blank">freeCodeCamp</a>, <a href="https://www.codecademy.com/"
@@ -112,13 +121,18 @@
                     features. We round off the module by looking at applying custom fonts to your page, and styling
                     lists and links. An example of an ordered list in code is this:</p>
                 <code>
-                        ol {
+                        li {
                             text-align: left;
                             color: black;
-                            font-weight: bold;
                             font-style: italic;
                         }
                     </code>
+
+                <p>That would look something like this: </p>
+
+                    <ol>
+                        <li>Hello world!</li>
+                    </ol>
 
                 <h3>
                     <li>CSS layout</li>
@@ -161,11 +175,9 @@
 
         <section class="main-section">
             <header id="See_also">See also</header>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>The main entry point for CSS documentation on MDN, where you'll find detailed reference documentation for
+                all features of the CSS language. Want to know all the values a property can take? This is a good place
+                to go.</p>
         </section>
     </main>
 

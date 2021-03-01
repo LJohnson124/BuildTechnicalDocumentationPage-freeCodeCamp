@@ -49,6 +49,9 @@ body {
     margin-left: 410px;
     padding: 20px;
     margin-bottom: 110px;
+  }
+
+  #main-doc p {
     text-indent: 15px;
   }
 
@@ -89,7 +92,6 @@ body {
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
-    text-indent: 15px;
   }
   
   @media only screen and (max-width: 815px) {
@@ -111,4 +113,32 @@ body {
       z-index: 1;
       border-bottom: 2px solid;
     }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
+  
+
+ol {
+    text-align: left;
+    color: black;
+    font-style: italic;
 }
