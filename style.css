@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;350;400&display=swap');
 
 
 body {
@@ -13,10 +13,11 @@ body {
     min-width: 290px;
     top: 0px;
     left: 0px;
-    width: 300px;
+    width: 400px;
     height: 100%;
     border-right: solid;
-    border-color: #666666;
+    border-color: #0000ff;
+    background-color: #ddf1ff;
 }
 
 #navbar ul {
@@ -27,7 +28,7 @@ body {
   }
   
   #navbar li {
-    color: #666666;
+    color: #8888ff;
     border-top: 1px solid;
     list-style: none;
     position: relative;
@@ -37,7 +38,7 @@ body {
   #navbar a {
     display: block;
     padding: 10px 30px;
-    color: #666666;
+    color: #6666ff;
     text-decoration: none;
     cursor: pointer;
   }
@@ -45,7 +46,69 @@ body {
 
   #main-doc {
     position: absolute;
-    margin-left: 310px;
+    margin-left: 410px;
     padding: 20px;
     margin-bottom: 110px;
+    text-indent: 15px;
   }
+
+  header {
+      color: #0000ca;
+      margin: 15px;
+      font-size: 2em;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  #main-doc header {
+      text-align: left;
+      margin: 5px;
+      font-weight: 300;
+      font-size: 1.8em;
+      line-height: 1.5em;
+  }
+
+  #main-doc h3, li {
+      font-weight: 400;
+  }
+
+  a {
+      text-decoration: none;
+      color: blue;
+  }
+
+  code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    text-indent: 15px;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+}
